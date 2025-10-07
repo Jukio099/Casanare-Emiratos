@@ -90,7 +90,7 @@
                             </svg>
                         </div>
                         <p class="text-xl font-medium text-gray-500 mb-2" data-translate-key="area">Área</p>
-                        <p class="text-5xl font-extrabold text-[#006633]">44,490</p>
+                        <p class="text-5xl font-extrabold text-[#006633] stat-number">44490</p>
                         <p class="text-lg text-gray-600 mt-2">km²</p>
                     </div>
                     <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition-all">
@@ -100,7 +100,7 @@
                             </svg>
                         </div>
                         <p class="text-xl font-medium text-gray-500 mb-2" data-translate-key="poblacion">Población Total</p>
-                        <p class="text-5xl font-extrabold text-[#006633]">481,938</p>
+                        <p class="text-5xl font-extrabold text-[#006633] stat-number">481938</p>
                         <p class="text-lg text-gray-600 mt-2" data-translate-key="habitantes">habitantes</p>
                     </div>
                     <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition-all">
@@ -110,7 +110,7 @@
                             </svg>
                         </div>
                         <p class="text-xl font-medium text-gray-500 mb-2" data-translate-key="poblacionUrbana">Población Urbana</p>
-                        <p class="text-5xl font-extrabold text-[#006633]">72%</p>
+                        <p class="text-5xl font-extrabold text-[#006633] stat-number">72</p>
                         <p class="text-lg text-gray-600 mt-2" data-translate-key="delTotal">del total</p>
                     </div>
                     <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition-all">
@@ -120,7 +120,7 @@
                             </svg>
                         </div>
                         <p class="text-xl font-medium text-gray-500 mb-2" data-translate-key="poblacionRural">Población Rural</p>
-                        <p class="text-5xl font-extrabold text-[#006633]">28%</p>
+                        <p class="text-5xl font-extrabold text-[#006633] stat-number">28</p>
                         <p class="text-lg text-gray-600 mt-2" data-translate-key="delTotal">del total</p>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- Proyecto 1: Planta de Carne Halal -->
-                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-[#009444] hover:shadow-xl transition-all">
+                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-[#009444] hover:shadow-xl transition-all project-card cursor-pointer" onclick="openProjectModal({title: 'Planta de Carne con Certificación Halal', description: 'Proyecto en Zona Franca con beneficios tributarios para exportar carne con certificación Halal. Acceso directo a mercados musulmanes internacionales.', capacity: '500 reses/día', investment: 'USD $30,633,000'})">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,7 +208,7 @@
                     </div>
 
                     <!-- Proyecto 2: Planta de Alimentos Concentrados -->
-                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-[#FFD700] hover:shadow-xl transition-all">
+                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-[#FFD700] hover:shadow-xl transition-all project-card cursor-pointer" onclick="openProjectModal({title: 'Planta de Alimentos Concentrados', description: 'Planta industrial para producir 14 toneladas/hora de alimento para animales. Incluye establecimiento de 16,500 hectáreas de maíz y soya para asegurar la materia prima.', capacity: '14 toneladas/hora', investment: 'USD $40,319,000'})">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -230,7 +230,7 @@
                     </div>
 
                     <!-- Proyecto 3: Planta Láctea Sostenible -->
-                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-500 hover:shadow-xl transition-all">
+                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-500 hover:shadow-xl transition-all project-card cursor-pointer" onclick="openProjectModal({title: 'Planta Láctea Sostenible', description: 'Fortalecimiento de la cadena láctea con 10 centros de acopio, laboratorio de calidad y escuela de formación. Enfoque en sostenibilidad y calidad premium.', capacity: '10 centros de acopio', investment: 'USD $11,560,216'})">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -249,7 +249,7 @@
                     </div>
 
                     <!-- Proyecto 4: Distrito de Riego del Río Cusiana -->
-                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-cyan-500 hover:shadow-xl transition-all">
+                    <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-cyan-500 hover:shadow-xl transition-all project-card cursor-pointer" onclick="openProjectModal({title: 'Distrito de Riego del Río Cusiana', description: 'Proyecto de adecuación de tierras para irrigar 8,230 hectáreas, maximizando la productividad agrícola. Infraestructura de última generación.', capacity: '8,230 hectáreas', investment: 'USD $111,975,000 (Fase III)'})">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -696,7 +696,102 @@
         // Set default language on load
         document.addEventListener('DOMContentLoaded', () => {
             changeLanguage('es');
+            initCounters();
+            initModals();
+            initParallax();
         });
+
+        // === CONTADORES ANIMADOS ===
+        function initCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const options = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                        entry.target.classList.add('counted');
+                        animateCounter(entry.target);
+                    }
+                });
+            }, options);
+
+            counters.forEach(counter => observer.observe(counter));
+        }
+
+        function animateCounter(element) {
+            const target = parseInt(element.textContent.replace(/,/g, ''));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+
+        // === MODALES PARA PROYECTOS ===
+        function initModals() {
+            // Crear modal container si no existe
+            if (!document.getElementById('project-modal')) {
+                const modalHTML = `
+                    <div id="project-modal" class="modal">
+                        <div class="modal-content">
+                            <button id="close-modal" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 2rem; cursor: pointer; color: #666;">&times;</button>
+                            <div id="modal-body"></div>
+                        </div>
+                    </div>
+                `;
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+                document.getElementById('close-modal').addEventListener('click', closeModal);
+                document.getElementById('project-modal').addEventListener('click', (e) => {
+                    if (e.target.id === 'project-modal') closeModal();
+                });
+            }
+        }
+
+        function openProjectModal(projectData) {
+            const modal = document.getElementById('project-modal');
+            const modalBody = document.getElementById('modal-body');
+            
+            modalBody.innerHTML = `
+                <h2 class="text-3xl font-bold text-[#006633] mb-4">${projectData.title}</h2>
+                <p class="text-lg text-gray-700 mb-6">${projectData.description}</p>
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    ${projectData.capacity ? `<div class="bg-green-50 p-4 rounded-lg"><strong>Capacidad:</strong> ${projectData.capacity}</div>` : ''}
+                    <div class="bg-yellow-50 p-4 rounded-lg"><strong>Inversión:</strong> ${projectData.investment}</div>
+                </div>
+                <button onclick="closeModal()" class="bg-[#d4af37] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#b8941f] transition">Cerrar</button>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').classList.remove('active');
+        }
+
+        // === EFECTO PARALLAX ===
+        function initParallax() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.parallax');
+                
+                parallaxElements.forEach(el => {
+                    const speed = el.dataset.speed || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+        }
 
     </script>
 </body>
