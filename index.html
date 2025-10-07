@@ -90,8 +90,9 @@
                             </svg>
                         </div>
                         <p class="text-xl font-medium text-gray-500 mb-2" data-translate-key="poblacion">Población Total</p>
-                        <p class="text-5xl font-extrabold text-[#006633] stat-number">481938</p>
+                        <p class="text-5xl font-extrabold text-[#006633] stat-number">418000</p>
                         <p class="text-lg text-gray-600 mt-2" data-translate-key="habitantes">habitantes</p>
+                        <p class="text-xs text-gray-500 mt-1"><em data-translate-key="fuenteDane">Fuente: DANE, Proyecciones 2024</em></p>
                     </div>
                     <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition-all">
                         <div class="icon-box bg-green-100 text-[#009444] rounded-full mx-auto flex items-center justify-center mb-4">
@@ -282,8 +283,9 @@
                         <div class="chart-container" style="height: 400px;">
                             <canvas id="gdpChart"></canvas>
                         </div>
-                        <p class="text-sm text-gray-600 mt-4 text-center" data-translate-key="gdpChartNote">
-                            *Cifras en miles de millones de pesos colombianos
+                        <p class="text-sm text-gray-600 mt-4 text-center">
+                            <em data-translate-key="gdpChartNote">*Cifras en miles de millones de pesos colombianos</em><br>
+                            <em data-translate-key="gdpChartSource">Fuente: DANE, Cuentas Departamentales 2023 (última actualización disponible)</em>
                         </p>
                     </div>
                     
@@ -538,15 +540,15 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-4" data-translate-key="footerContactTitle">Contacto</h4>
-                    <p class="mb-2" data-translate-key="footerContactEmail">Email: inversion@casanare.gov.co</p>
-                    <p data-translate-key="footerContactPhone">Teléfono: +57 (8) 635 8588</p>
+                    <h4 class="text-xl font-bold mb-2" data-translate-key="footerCreatorTitle">Página Desarrollada por:</h4>
+                    <p class="text-lg font-semibold">Julio César Rodriguez Cristancho</p>
+                    <p class="text-md text-gray-300">Economista y Especialista en Machine Learning</p>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4" data-translate-key="footerLinksTitle">Enlaces</h4>
                     <ul class="space-y-2">
                         <li><a href="#territorio" class="hover:text-[#FFD700]" data-translate-key="linkTerritorio">Territorio</a></li>
-                        <li><a href="#biodiversidad" class="hover:text-[#FFD700]" data-translate-key="linkBiodiversidad">Biodiversidad</a></li>
+                        <li><a href="#ventajas-eau" class="hover:text-[#FFD700]" data-translate-key="linkVentajasEau">Ventajas Estratégicas</a></li>
                         <li><a href="#proyectos-pacca" class="hover:text-[#FFD700]" data-translate-key="linkProyectos">Proyectos</a></li>
                         <li><a href="#conectividad" class="hover:text-[#FFD700]" data-translate-key="linkConectividad">Conectividad</a></li>
                     </ul>
@@ -633,15 +635,15 @@
                 exitButton: 'Salir',
                 footerTitle: 'Gobernación de Casanare',
                 footerDesc: 'Construyendo puentes de prosperidad entre Casanare y el mundo árabe.',
-                footerContactTitle: 'Contacto',
-                footerContactEmail: 'Email: inversion@casanare.gov.co',
-                footerContactPhone: 'Teléfono: +57 (8) 635 8588',
+                footerCreatorTitle: 'Página Desarrollada por:',
                 footerLinksTitle: 'Enlaces',
                 linkTerritorio: 'Territorio',
-                linkBiodiversidad: 'Biodiversidad',
+                linkVentajasEau: 'Ventajas Estratégicas',
                 linkProyectos: 'Proyectos',
                 linkConectividad: 'Conectividad',
-                footerRights: '&copy; 2025 Gobernación de Casanare. Todos los derechos reservados.'
+                footerRights: '&copy; 2025 Gobernación de Casanare. Todos los derechos reservados.',
+                fuenteDane: 'Fuente: DANE, Proyecciones 2024',
+                gdpChartSource: 'Fuente: DANE, Cuentas Departamentales 2023 (última actualización disponible)'
             },
             en: {
                 headerTitle: '<span class="text-[#009444]">Casanare</span> <span class="text-black">&</span> <span class="text-[#FFD700]">UAE</span>',
@@ -714,15 +716,15 @@
                 exitButton: 'Exit',
                 footerTitle: 'Government of Casanare',
                 footerDesc: 'Building prosperity bridges between Casanare and the Arab world.',
-                footerContactTitle: 'Contact',
-                footerContactEmail: 'Email: inversion@casanare.gov.co',
-                footerContactPhone: 'Phone: +57 (8) 635 8588',
+                footerCreatorTitle: 'Page Developed by:',
                 footerLinksTitle: 'Links',
                 linkTerritorio: 'Territory',
-                linkBiodiversidad: 'Biodiversity',
+                linkVentajasEau: 'Strategic Advantages',
                 linkProyectos: 'Projects',
                 linkConectividad: 'Connectivity',
-                footerRights: '&copy; 2025 Government of Casanare. All rights reserved.'
+                footerRights: '&copy; 2025 Government of Casanare. All rights reserved.',
+                fuenteDane: 'Source: DANE, Projections 2024',
+                gdpChartSource: 'Source: DANE, Departmental Accounts 2023 (latest available update)'
             },
             ar: {
                 headerTitle: '<span class="text-[#009444]">كاساناري</span> <span class="text-black">&</span> <span class="text-[#FFD700]">الإمارات</span>',
@@ -795,15 +797,15 @@
                 exitButton: 'خروج',
                 footerTitle: 'حكومة كاساناري',
                 footerDesc: 'بناء جسور الازدهار بين كاساناري والعالم العربي.',
-                footerContactTitle: 'اتصل',
-                footerContactEmail: 'البريد الإلكتروني: inversion@casanare.gov.co',
-                footerContactPhone: 'الهاتف: 8588 635 (8) 57+',
+                footerCreatorTitle: 'تم تطوير الصفحة بواسطة:',
                 footerLinksTitle: 'روابط',
                 linkTerritorio: 'الإقليم',
-                linkBiodiversidad: 'التنوع البيولوجي',
+                linkVentajasEau: 'المزايا الاستراتيجية',
                 linkProyectos: 'المشاريع',
                 linkConectividad: 'الاتصال',
-                footerRights: '&copy; 2025 حكومة كاساناري. جميع الحقوق محفوظة.'
+                footerRights: '&copy; 2025 حكومة كاساناري. جميع الحقوق محفوظة.',
+                fuenteDane: 'المصدر: DANE، التوقعات 2024',
+                gdpChartSource: 'المصدر: DANE، الحسابات الإقليمية 2023 (آخر تحديث متاح)'
             }
         };
 
