@@ -297,3 +297,22 @@ footer::before {
 section {
     scroll-margin-top: 80px;
 }
+
+/* Estilos para tarjetas de datos clave */
+.tarjeta-dato-clave {
+    transition: all 0.3s ease;
+}
+
+.tarjeta-dato-clave:hover {
+    transform: translateX(8px);
+}
+
+/* RTL support para tarjetas */
+[dir="rtl"] .tarjeta-dato-clave {
+    border-left: none;
+    border-right: 4px solid;
+}
+
+[dir="rtl"] .tarjeta-dato-clave:hover {
+    transform: translateX(-8px);
+}
