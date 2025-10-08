@@ -316,3 +316,63 @@ section {
 [dir="rtl"] .tarjeta-dato-clave:hover {
     transform: translateX(-8px);
 }
+
+/* Estilos para tarjetas de proyectos clickeables */
+.project-card {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card::after {
+    content: "Haz clic para más información";
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 102, 51, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 102, 51, 0.2);
+}
+
+.project-card::before {
+    content: "👆";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* RTL support para tarjetas de proyectos */
+[dir="rtl"] .project-card::after {
+    right: auto;
+    left: 1rem;
+}
+
+[dir="rtl"] .project-card::before {
+    right: auto;
+    left: 1rem;
+}
